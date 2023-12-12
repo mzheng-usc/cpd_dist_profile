@@ -4,7 +4,7 @@ This repository hosts the code base for the paper
 
 **Change Point Detection for Random Objects using Distance Profiles**
 
-Paromita Dubey, Minxing Zhen
+Paromita Dubey, Minxing Zheng
 
 Department of Data Sciences and Operations, Marshall School of Business, University of Southern California
 
