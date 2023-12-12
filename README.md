@@ -2,7 +2,7 @@
 
 This repository hosts the code base for the paper
 
-** Change Point Detection for Random Objects using Distance Profiles**
+**Change Point Detection for Random Objects using Distance Profiles**
 
 Paromita Dubey, Minxing Zhen
 
