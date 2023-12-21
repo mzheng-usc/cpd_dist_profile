@@ -1,11 +1,11 @@
-# library(pracma)
-# library(MASS)
-# library(energy)
-# library(gTests)
-# library(igraph)
-# library(ade4)
-# library(matrixStats)
-# library(magrittr)
+library(pracma)
+library(MASS)
+library(energy)
+library(gTests)
+library(igraph)
+library(ade4)
+library(matrixStats)
+library(magrittr)
 
 # function computing Hodge rank ----
 #'@param d A matrix holding the pairwise distances between individuals.
