@@ -8,7 +8,7 @@ Paromita Dubey, Minxing Zheng
 
 Department of Data Sciences and Operations, Marshall School of Business, University of Southern California
 
-[Link to Paper](https://arxiv.org/abs/2311.16025)
+[Link to Preprint](https://arxiv.org/abs/2311.16025)
 
 ## Overview
 
@@ -32,7 +32,7 @@ distmat<-as.matrix(dist( Data, method = 'euclidean' ))
 depth_result<-depth_CPD(distmat,num_permut =num_permut,c=0.1)
 ```
 
-The output will look like this, the p value is less than 0.01, and the estimated change point location is 51.
+The output will look like the following, the p value is less than 0.01, and the estimated change point location is 51.
 
 ```R
 > depth_result
