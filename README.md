@@ -14,21 +14,21 @@ Department of Data Sciences and Operations, Marshall School of Business, Univers
 
 The core function for implementing the proposed distance profile based change point detection method is the `depth_CPD` function in *depth_CPD_func.R*. The `depth_CPD` function takes a pairwise distance matrix as input and outputs the p-value, estimated change point location and test statistics. 
 
-For example, we generate a data sequence of length 100, with first 50 observations generated from $N(0_p,I)$  and last 50 observations generated from $N(1_p,I)$  , where $p$ Is the dimension of the multivariate random vector.
+For example, we generate a data sequence of length 100, with the first 50 observations generated from $N(0_p,I)$  and the last 50 observations generated from $N(1_p,I)$, where $p$ Is the dimension of the multivariate random vector.
 
 ```R
 library(MASS)
 source("depth_CPD_func.R") 
 p <- 10 # dimension of the multivariate random vector
-num_permut <- 100 #number of permutation for the permutation test
+num_permut <- 100 #number of permutations for the permutation test
 I<-diag(x = 1, p, p)
 
 #generated data sequence
 Data<-rbind(mvrnorm(50,mu=rep(0,p),Sigma=I),mvrnorm(50,mu=c(rep(1,p)),Sigma=I))
-#caculate the pariwise distance matrix, with eculidean distance
+#caculate the pairwise distance matrix, with Euclidean distance
 distmat<-as.matrix(dist( Data, method = 'euclidean' ))
 
-#the depth_CPD function takes pairwise distance matrix as input, and user could also set number of permutation for permutation test and a cut-off parameter c.
+#the depth_CPD function takes a pairwise distance matrix as input, and user could also set the number of permutations for the permutation test and a cut-off parameter c.
 depth_result<-depth_CPD(distmat,num_permut =num_permut,c=0.1)
 ```
 
