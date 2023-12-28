@@ -6,7 +6,7 @@ source("objTest_fctns.R")
 #' @param distmat The pairwise distance matrix 
 #' @param c the cutoff for the interval, I_c
 #' @param num_permut number of permutation
-depth_CPD<-function(distmat,c=0.1,num_permut=500){
+dist_CPD<-function(distmat,c=0.1,num_permut=500){
   n<-nrow(distmat)
   
   max_stat<-c()
@@ -43,7 +43,7 @@ depth_CPD<-function(distmat,c=0.1,num_permut=500){
 
 
 
-depth_CPD_permutated<-function(distmat,c=0.1,num_permut=500){
+dist_CPD_permutated<-function(distmat,c=0.1,num_permut=500){
   n<-nrow(distmat)
   
   max_stat<-c()
